@@ -21,18 +21,6 @@ Peeky Task Web is the official promotional website and interactive web showcase 
 
 ---
 
-## App Preview
-
-<div align="center">
-
-![Peeky Task Web Preview](assets/preview.png)
-
-> Experience interactive widgets, live color switching, and product walkthroughs directly in the browser.
-
-</div>
-
----
-
 ## Features
 
 - **Hero & Live Widget Demonstration** — interactive mockups showing the rested 7px edge slivers expanding into sticky task tabs on hover
