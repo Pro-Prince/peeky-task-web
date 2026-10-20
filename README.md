@@ -21,11 +21,15 @@ Peeky Task Web is the official promotional website and interactive web showcase 
 
 ---
 
-## Live Demo
+## App Preview
 
-🔗 **[peekytask.vercel.app](https://github.com/Pro-Prince/peeky-task-web)**
+<div align="center">
+
+![Peeky Task Web Preview](assets/preview.png)
 
 > Experience interactive widgets, live color switching, and product walkthroughs directly in the browser.
+
+</div>
 
 ---
 
@@ -71,38 +75,6 @@ Avoided heavy third-party UI libraries by building lightweight, accessible accor
 
 **3. High-performance static builds**
 Optimized bundle sizes and asset loading to ensure the landing page scores top marks on Lighthouse performance metrics.
-
----
-
-## Run Locally
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm (v9 or higher)
-
-### Installation
-```bash
-# Clone repository
-git clone https://github.com/Pro-Prince/peeky-task-web.git
-cd peeky-task-web
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
----
-
-## Build for Production
-
-```bash
-npm run build
-npm start
-```
 
 ---
 
