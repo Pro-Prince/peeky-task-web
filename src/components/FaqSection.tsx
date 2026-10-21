@@ -45,14 +45,14 @@ export function FaqSection() {
     <section id="faq" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-smoke py-24 sm:py-32">
       <div className="mx-auto w-full px-5 sm:px-8 max-w-[820px]">
         {/* Section Heading */}
-        <div className="mx-auto max-w-[62ch] text-center">
+        <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>
           <h2 className="type-headline text-ink text-[clamp(1.95rem,4.4vw,3.4rem)]">
             The things people actually want to know.
           </h2>
         </div>
 
         {/* Accordion Container */}
-        <div className="mt-12 flex flex-col divide-y divide-black/8 border-y border-black/8">
+        <div data-reveal className="mt-12 flex flex-col divide-y divide-black/8 border-y border-black/8" style={{ "--reveal-delay": "0.15s" } as React.CSSProperties}>
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (

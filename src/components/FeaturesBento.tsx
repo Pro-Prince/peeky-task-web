@@ -36,7 +36,7 @@ export function FeaturesBento() {
     <section id="features" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-white py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         {/* Section Heading */}
-        <div className="mx-auto max-w-[62ch] text-center">
+        <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>
           <h2 className="type-headline text-ink text-[clamp(1.95rem,4.4vw,3.4rem)]">
             A complete task system, hiding at the edge.
           </h2>
@@ -48,7 +48,7 @@ export function FeaturesBento() {
         {/* Bento Grid Top Section */}
         <div className="mt-16 grid gap-4 md:grid-cols-6">
           {/* Bento Card 1: All Tasks Manager */}
-          <div className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-4">
+          <div data-reveal className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-4" style={{ "--reveal-delay": "0.1s" } as React.CSSProperties}>
             <h3 className="text-[19px] font-semibold tracking-[-0.02em]">
               All Tasks, with everything organized
             </h3>
@@ -68,7 +68,7 @@ export function FeaturesBento() {
           </div>
 
           {/* Bento Card 2: Floating Pill View */}
-          <div className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-2">
+          <div data-reveal className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-2" style={{ "--reveal-delay": "0.2s" } as React.CSSProperties}>
             <h3 className="text-[19px] font-semibold tracking-[-0.02em]">
               Subtle desktop pill
             </h3>
@@ -88,7 +88,7 @@ export function FeaturesBento() {
           </div>
 
           {/* Bento Card 3: Delete with 10s Undo Demo */}
-          <div className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-2">
+          <div data-reveal className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-2" style={{ "--reveal-delay": "0.15s" } as React.CSSProperties}>
             <div className="p-7 pb-0">
               <h3 className="text-[19px] font-semibold tracking-[-0.02em]">
                 Delete never asks
@@ -165,7 +165,7 @@ export function FeaturesBento() {
           </div>
 
           {/* Bento Card 4: Interactive 8 Colors */}
-          <div className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-2">
+          <div data-reveal className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-2" style={{ "--reveal-delay": "0.2s" } as React.CSSProperties}>
             <h3 className="text-[19px] font-semibold tracking-[-0.02em]">
               Eight task colors, Ctrl+. apart
             </h3>
@@ -204,7 +204,7 @@ export function FeaturesBento() {
           </div>
 
           {/* Bento Card 5: Interactive Light & Dark Switcher */}
-          <div className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-2">
+          <div data-reveal className="flex flex-col overflow-hidden rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:col-span-2" style={{ "--reveal-delay": "0.25s" } as React.CSSProperties}>
             <h3 className="text-[19px] font-semibold tracking-[-0.02em]">
               Light and dark Fluent themes
             </h3>
@@ -267,7 +267,7 @@ export function FeaturesBento() {
 
         {/* 6 Sub-Feature Cards */}
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div data-reveal className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ "--reveal-delay": "0.05s" } as React.CSSProperties}>
             <div className="bg-smoke text-ink group-hover:bg-note-butter mb-4 grid size-9 place-items-center rounded-xl transition-colors">
               <Command className="size-4.5" />
             </div>
@@ -277,7 +277,7 @@ export function FeaturesBento() {
             </p>
           </div>
 
-          <div className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div data-reveal className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ "--reveal-delay": "0.1s" } as React.CSSProperties}>
             <div className="bg-smoke text-ink group-hover:bg-note-butter mb-4 grid size-9 place-items-center rounded-xl transition-colors">
               <Monitor className="size-4.5" />
             </div>
@@ -287,7 +287,7 @@ export function FeaturesBento() {
             </p>
           </div>
 
-          <div className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div data-reveal className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ "--reveal-delay": "0.15s" } as React.CSSProperties}>
             <div className="bg-smoke text-ink group-hover:bg-note-butter mb-4 grid size-9 place-items-center rounded-xl transition-colors">
               <Maximize className="size-4.5" />
             </div>
@@ -297,7 +297,7 @@ export function FeaturesBento() {
             </p>
           </div>
 
-          <div className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div data-reveal className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ "--reveal-delay": "0.2s" } as React.CSSProperties}>
             <div className="bg-smoke text-ink group-hover:bg-note-butter mb-4 grid size-9 place-items-center rounded-xl transition-colors">
               <Search className="size-4.5" />
             </div>
@@ -307,7 +307,7 @@ export function FeaturesBento() {
             </p>
           </div>
 
-          <div className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div data-reveal className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ "--reveal-delay": "0.25s" } as React.CSSProperties}>
             <div className="bg-smoke text-ink group-hover:bg-note-butter mb-4 grid size-9 place-items-center rounded-xl transition-colors">
               <CheckCircle2 className="size-4.5" />
             </div>
@@ -317,7 +317,7 @@ export function FeaturesBento() {
             </p>
           </div>
 
-          <div className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div data-reveal className="group rounded-2xl border border-black/6 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ "--reveal-delay": "0.3s" } as React.CSSProperties}>
             <div className="bg-smoke text-ink group-hover:bg-note-butter mb-4 grid size-9 place-items-center rounded-xl transition-colors">
               <Power className="size-4.5" />
             </div>

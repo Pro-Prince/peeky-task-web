@@ -5,7 +5,7 @@ export function PrivacySection() {
     <section id="privacy" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-paper-bg py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 grid items-center gap-14 lg:grid-cols-2">
         {/* Left Column: Privacy Explanation */}
-        <div>
+        <div data-reveal style={{ "--reveal-delay": "0.1s" } as React.CSSProperties}>
           <div className="max-w-[58ch]">
             <h2 className="type-headline text-ink text-[clamp(1.95rem,4.4vw,3.4rem)]">
               Your tasks never leave your PC.
@@ -75,7 +75,7 @@ export function PrivacySection() {
         </div>
 
         {/* Right Column: Visual Privacy Card */}
-        <div>
+        <div data-reveal style={{ "--reveal-delay": "0.2s" } as React.CSSProperties}>
           <div className="relative overflow-hidden rounded-3xl border border-black/6 bg-white p-6 shadow-[0_30px_80px_-50px_rgba(0,0,0,0.5)] sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
               <span className="text-ink flex items-center gap-2 text-[13px] font-medium whitespace-nowrap">

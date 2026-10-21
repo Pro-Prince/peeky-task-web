@@ -3,7 +3,7 @@ export function SpeedMetrics() {
     <section id="speed" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-white py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         {/* Section Heading */}
-        <div className="mx-auto max-w-[62ch] text-center">
+        <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>
           <h2 className="type-headline text-ink text-[clamp(1.95rem,4.4vw,3.4rem)]">
             It does nothing, extremely well.
           </h2>
@@ -13,7 +13,7 @@ export function SpeedMetrics() {
         </div>
 
         {/* 4 Big Stat Cards */}
-        <div className="bg-hairline mt-16 grid gap-px overflow-hidden rounded-3xl border border-black/8 sm:grid-cols-2 lg:grid-cols-4">
+        <div data-reveal className="bg-hairline mt-16 grid gap-px overflow-hidden rounded-3xl border border-black/8 sm:grid-cols-2 lg:grid-cols-4" style={{ "--reveal-delay": "0.15s" } as React.CSSProperties}>
           <div className="h-full bg-white">
             <div className="flex h-full flex-col justify-between p-7">
               <p className="type-display text-ink text-[clamp(2.4rem,5vw,3.4rem)]">

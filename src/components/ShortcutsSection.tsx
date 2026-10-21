@@ -3,7 +3,7 @@ export function ShortcutsSection() {
     <section id="shortcuts" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-smoke py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         {/* Heading */}
-        <div className="mx-auto max-w-[62ch] text-center">
+        <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>
           <h2 className="type-headline text-ink text-[clamp(1.95rem,4.4vw,3.4rem)]">
             Three keys, and you never touch the mouse.
           </h2>
@@ -15,7 +15,7 @@ export function ShortcutsSection() {
         {/* 4 Shortcut Category Cards */}
         <div className="mt-16 grid gap-4 md:grid-cols-2">
           {/* Card 1: Anywhere in Windows */}
-          <div className="rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+          <div data-reveal className="rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]" style={{ "--reveal-delay": "0.1s" } as React.CSSProperties}>
             <p className="text-[15px] font-semibold tracking-[-0.015em]">Anywhere in Windows</p>
             <p className="text-ink-muted mt-1 text-[13px]">Registered system-wide</p>
 
@@ -49,7 +49,7 @@ export function ShortcutsSection() {
           </div>
 
           {/* Card 2: In the task widget */}
-          <div className="rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+          <div data-reveal className="rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]" style={{ "--reveal-delay": "0.15s" } as React.CSSProperties}>
             <p className="text-[15px] font-semibold tracking-[-0.015em]">Inside the task widget</p>
             <p className="text-ink-muted mt-1 text-[13px]">While navigating tasks</p>
 
@@ -87,7 +87,7 @@ export function ShortcutsSection() {
           </div>
 
           {/* Card 3: During the 10s countdown */}
-          <div className="rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+          <div data-reveal className="rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]" style={{ "--reveal-delay": "0.2s" } as React.CSSProperties}>
             <p className="text-[15px] font-semibold tracking-[-0.015em]">During the countdown</p>
             <p className="text-ink-muted mt-1 text-[13px]">Ten seconds after any deletion</p>
 
@@ -103,7 +103,7 @@ export function ShortcutsSection() {
           </div>
 
           {/* Card 4: Pinning & Window Controls */}
-          <div className="rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+          <div data-reveal className="rounded-3xl border border-black/6 bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]" style={{ "--reveal-delay": "0.25s" } as React.CSSProperties}>
             <p className="text-[15px] font-semibold tracking-[-0.015em]">Pinning & Window</p>
             <p className="text-ink-muted mt-1 text-[13px]">Customizing layer behavior</p>
 

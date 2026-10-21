@@ -74,7 +74,7 @@ export function DownloadCta() {
       </div>
 
       {/* Content */}
-      <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 relative z-10 text-center">
+      <div data-reveal className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 relative z-10 text-center" style={{ "--reveal-y": "28px" } as React.CSSProperties}>
         <h2 className="type-display text-ink mx-auto max-w-[16ch] text-[clamp(2.3rem,6vw,4.4rem)]">
           Put them at the edge and never lose focus.
         </h2>

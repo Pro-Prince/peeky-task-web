@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { ScrollRevealProvider } from "@/components/ScrollRevealProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -53,7 +54,9 @@ export default function RootLayout({
       className={`${inter.variable} ${excalifont.variable} h-full antialiased`}
     >
       <body className="bg-paper-bg text-ink flex min-h-full flex-col overflow-x-hidden font-sans">
-        {children}
+        <ScrollRevealProvider>
+          {children}
+        </ScrollRevealProvider>
       </body>
     </html>
   );

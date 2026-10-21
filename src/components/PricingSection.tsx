@@ -6,7 +6,7 @@ export function PricingSection() {
     <section id="pricing" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-white py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         {/* Section Heading */}
-        <div className="mx-auto max-w-[62ch] text-center">
+        <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>
           <h2 className="type-headline text-ink text-[clamp(1.95rem,4.4vw,3.4rem)]">
             Pay once. Keep it forever.
           </h2>
@@ -16,7 +16,7 @@ export function PricingSection() {
         </div>
 
         {/* Read-Only Guarantee Alert */}
-        <div className="border-note-mint/60 bg-note-mint/25 mx-auto mt-12 flex max-w-[760px] items-start gap-4 rounded-2xl border p-6">
+        <div data-reveal className="border-note-mint/60 bg-note-mint/25 mx-auto mt-12 flex max-w-[760px] items-start gap-4 rounded-2xl border p-6" style={{ "--reveal-delay": "0.1s" } as React.CSSProperties}>
           <span className="bg-note-mint grid size-9 shrink-0 place-items-center rounded-full">
             <LockOpen className="text-note-ink size-4.5" />
           </span>
@@ -33,7 +33,7 @@ export function PricingSection() {
         {/* 2 Pricing Tier Cards */}
         <div className="mx-auto mt-10 grid max-w-[760px] gap-5 sm:grid-cols-2">
           {/* Card 1: 7-Day Free Trial */}
-          <div className="relative flex h-full flex-col rounded-3xl border border-black/8 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 shadow-xs">
+          <div data-reveal className="relative flex h-full flex-col rounded-3xl border border-black/8 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 shadow-xs" style={{ "--reveal-delay": "0.15s" } as React.CSSProperties}>
             <p className="text-[13px] font-semibold text-ink-muted">Free trial</p>
             <p className="type-display mt-3 text-[clamp(2.2rem,4vw,2.8rem)]">Free</p>
             <p className="mt-2.5 text-[13px] text-ink-muted">for 7 days</p>
@@ -79,7 +79,7 @@ export function PricingSection() {
           </div>
 
           {/* Card 2: Lifetime Personal License */}
-          <div className="relative flex h-full flex-col rounded-3xl border border-ink bg-ink p-7 text-white shadow-[0_40px_90px_-40px_rgba(0,0,0,0.7)] transition-all duration-300 hover:-translate-y-1.5">
+          <div data-reveal className="relative flex h-full flex-col rounded-3xl border border-ink bg-ink p-7 text-white shadow-[0_40px_90px_-40px_rgba(0,0,0,0.7)] transition-all duration-300 hover:-translate-y-1.5" style={{ "--reveal-delay": "0.2s" } as React.CSSProperties}>
             <p className="text-[13px] font-semibold text-white/60">Lifetime License</p>
             <div className="flex flex-col items-start gap-1 mt-3">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
