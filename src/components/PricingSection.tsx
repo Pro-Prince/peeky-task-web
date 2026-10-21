@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Check, LockOpen, Sparkles } from "lucide-react";
 
 export function PricingSection() {
@@ -120,14 +121,12 @@ export function PricingSection() {
 
             {/* Checkout Action Button */}
             <div className="mt-8 border-t border-white/10 pt-6">
-              <a
-                href="https://checkout.dodopayments.com/buy/pdt_0NqCUIWS9mwMJkq06Opw3?quantity=1&showDiscounts=false"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/buy"
                 className="inline-flex items-center justify-center rounded-full font-medium tracking-[-0.01em] transition-all h-10 px-5 text-[14px] bg-white text-black hover:bg-white/90 w-full text-center cursor-pointer shadow-md"
               >
                 Buy a lifetime license
-              </a>
+              </Link>
             </div>
           </div>
         </div>

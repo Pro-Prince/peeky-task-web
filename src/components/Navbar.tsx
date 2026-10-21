@@ -33,7 +33,7 @@ export function Navbar() {
         <ul className="hidden items-center gap-8 md:flex">
           <li>
             <Link
-              href="#dock"
+              href="/#dock"
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               The dock
@@ -42,7 +42,7 @@ export function Navbar() {
           </li>
           <li>
             <Link
-              href="#features"
+              href="/#features"
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Features
@@ -51,7 +51,7 @@ export function Navbar() {
           </li>
           <li>
             <Link
-              href="#shortcuts"
+              href="/#shortcuts"
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Shortcuts
@@ -60,7 +60,7 @@ export function Navbar() {
           </li>
           <li>
             <Link
-              href="#speed"
+              href="/#speed"
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Speed
@@ -69,7 +69,7 @@ export function Navbar() {
           </li>
           <li>
             <Link
-              href="#privacy"
+              href="/#privacy"
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Privacy
@@ -78,7 +78,7 @@ export function Navbar() {
           </li>
           <li>
             <Link
-              href="#pricing"
+              href="/#pricing"
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Pricing
@@ -87,7 +87,7 @@ export function Navbar() {
           </li>
           <li>
             <Link
-              href="#faq"
+              href="/#faq"
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               FAQ
@@ -105,8 +105,8 @@ export function Navbar() {
             Free trial
           </Link>
           <Link
-            href="#pricing"
-            className="bg-ink hover:bg-ink/85 shadow-sm hidden h-8 items-center rounded-full px-4 text-[13px] font-medium text-white transition-all sm:inline-flex"
+            href="/buy"
+            className="bg-ink hover:bg-ink/88 shadow-sm hidden h-8 items-center rounded-full px-4 text-[13px] font-medium text-white transition-all sm:inline-flex"
           >
             Buy once
           </Link>
@@ -129,7 +129,7 @@ export function Navbar() {
           <ul className="flex flex-col gap-2">
             <li>
               <Link
-                href="#dock"
+                href="/#dock"
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
@@ -138,7 +138,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="#features"
+                href="/#features"
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
@@ -147,7 +147,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="#shortcuts"
+                href="/#shortcuts"
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
@@ -156,7 +156,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="#speed"
+                href="/#speed"
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
@@ -165,7 +165,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="#privacy"
+                href="/#privacy"
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
@@ -174,16 +174,25 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="#pricing"
+                href="/#pricing"
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
                 Pricing
               </Link>
             </li>
+            <li>
+              <Link
+                href="/buy"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px] font-medium"
+              >
+                Buy once
+              </Link>
+            </li>
             <li className="pt-2 border-t border-black/5">
               <Link
-                href="#download"
+                href="/#download"
                 onClick={() => setMobileMenuOpen(false)}
                 className="bg-ink block w-full rounded-full py-2.5 text-center text-[13px] font-medium text-white"
               >

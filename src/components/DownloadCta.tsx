@@ -93,7 +93,7 @@ export function DownloadCta() {
             Download on Microsoft Store
           </a>
           <Link
-            href="#pricing"
+            href="/buy"
             className="text-ink inline-flex h-12 items-center rounded-full border border-black/15 bg-white/80 px-8 text-[15px] font-medium tracking-[-0.01em] transition-all hover:border-black/30 hover:bg-black/5"
           >
             Buy Lifetime License ($5.99)
