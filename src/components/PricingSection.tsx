@@ -80,18 +80,10 @@ export function PricingSection() {
           {/* Card 2: Lifetime Personal License */}
           <div className="relative flex h-full flex-col rounded-3xl border border-ink bg-ink p-7 text-white shadow-[0_40px_90px_-40px_rgba(0,0,0,0.7)] transition-all duration-300 hover:-translate-y-1.5">
             <p className="text-[13px] font-semibold text-white/60">Lifetime License</p>
-            <div className="flex flex-col items-start gap-3 mt-3">
+            <div className="flex flex-col items-start gap-1 mt-3">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <span className="type-display text-[clamp(2.2rem,4vw,2.8rem)]">$5.99</span>
-                <span className="text-[18px] line-through text-white/45">$11.98</span>
               </div>
-              <span
-                data-shimmer="true"
-                className="bg-note-butter text-note-ink inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-[11.5px] font-semibold tracking-[-0.01em]"
-              >
-                <Sparkles className="size-3.5" />
-                Launch price — save 50%
-              </span>
             </div>
 
             <p className="mt-2 text-[13px] text-white/50">one-time payment, yours forever</p>
@@ -126,29 +118,8 @@ export function PricingSection() {
               </li>
             </ul>
 
-            {/* Launch Seats Progress Bar */}
-            <div className="w-full mt-7 border-t border-white/10 pt-5">
-              <div className="flex items-baseline justify-between gap-3 text-[12.5px]">
-                <span className="font-semibold text-white">27 of 50 launch keys left</span>
-                <span className="text-white/50">23 claimed</span>
-              </div>
-              <div className="mt-2.5 flex gap-[2px]">
-                {Array.from({ length: 50 }).map((_, i) => (
-                  <span
-                    key={i}
-                    className={`h-2 flex-1 rounded-[2px] ${
-                      i < 23 ? "bg-note-butter" : "bg-white/12"
-                    }`}
-                  />
-                ))}
-              </div>
-              <p className="mt-2 text-[12px] text-white/50">
-                Then $11.98 for subsequent buyers.
-              </p>
-            </div>
-
             {/* Checkout Action Button */}
-            <div className="mt-6">
+            <div className="mt-8 border-t border-white/10 pt-6">
               <a
                 href="https://checkout.dodopayments.com/buy/pdt_0NqCUIWS9mwMJkq06Opw3?quantity=1&showDiscounts=false"
                 target="_blank"
