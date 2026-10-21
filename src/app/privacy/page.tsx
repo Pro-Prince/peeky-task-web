@@ -59,7 +59,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-[18px] font-semibold text-ink mb-2">5. Contact Us</h2>
             <p className="text-ink-muted">
-              If you have any questions about this Privacy Policy, please email us directly at <a href="mailto:support@peekytask.in" className="text-ink underline">support@peekytask.in</a>.
+              If you have any questions about this Privacy Policy, please email us directly at <a href="mailto:princepatel5807@gmail.com" className="text-ink underline">princepatel5807@gmail.com</a>.
             </p>
           </section>
         </div>

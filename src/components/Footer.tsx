@@ -33,10 +33,10 @@ export function Footer() {
             Changelog
           </Link>
           <a
-            href="mailto:support@peekytask.in"
+            href="mailto:princepatel5807@gmail.com"
             className="hover:text-ink transition-colors"
           >
-            support@peekytask.in
+            princepatel5807@gmail.com
           </a>
         </div>
       </div>

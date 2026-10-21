@@ -52,7 +52,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-[18px] font-semibold text-ink mb-2">4. Support & Inquiries</h2>
             <p className="text-ink-muted">
-              For any licensing issues, device transfers, or general support, please reach out to <a href="mailto:support@peekytask.in" className="text-ink underline">support@peekytask.in</a>.
+              For any licensing issues, device transfers, or general support, please reach out to <a href="mailto:princepatel5807@gmail.com" className="text-ink underline">princepatel5807@gmail.com</a>.
             </p>
           </section>
         </div>
