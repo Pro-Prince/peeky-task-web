@@ -150,7 +150,7 @@ export function PricingSection() {
             {/* Checkout Action Button */}
             <div className="mt-6">
               <a
-                href="https://checkout.dodopayments.com/buy"
+                href="https://test.checkout.dodopayments.com/buy/pdt_0NqCQuPDwz2kzv1b3ThjQ?quantity=1&showDiscounts=false"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full font-medium tracking-[-0.01em] transition-all h-10 px-5 text-[14px] bg-white text-black hover:bg-white/90 w-full text-center cursor-pointer shadow-md"
