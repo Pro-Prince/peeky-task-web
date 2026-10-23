@@ -1,6 +1,6 @@
 export function ShortcutsSection() {
   return (
-    <section id="shortcuts" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-smoke py-24 sm:py-32">
+    <section id="shortcuts" className="text-ink relative isolate scroll-mt-24 overflow-clip bg-smoke py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         {/* Heading */}
         <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>

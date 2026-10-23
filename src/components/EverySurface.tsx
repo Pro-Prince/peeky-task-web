@@ -97,7 +97,7 @@ export function EverySurface() {
   const headlineWords = ["Every", "surface,", "at", "a", "glance."];
 
   return (
-    <section className="text-ink relative isolate scroll-mt-16 overflow-clip bg-haze pt-24 sm:pt-32">
+    <section id="surfaces" className="text-ink relative isolate scroll-mt-20 overflow-clip bg-haze pt-24 sm:pt-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         <div className="mx-auto max-w-[62ch] text-center">
           <h2 className="type-headline text-ink text-[clamp(1.95rem,4.4vw,3.4rem)]">
@@ -147,7 +147,7 @@ export function EverySurface() {
               transition: "transform 0.05s ease-out",
             }}
           >
-            {SURFACES.map((card) => (
+            {SURFACES.map((card, idx) => (
               <li key={card.id} className="w-[74vw] shrink-0 sm:w-[52vw] lg:w-[40vw]">
                 <div className="overflow-hidden rounded-2xl border border-black/8 bg-white shadow-[0_40px_90px_-45px_rgba(0,0,0,0.5)]">
                   <div className="relative isolate overflow-hidden bg-black/5" style={{ aspectRatio: "16 / 10" }}>
@@ -156,7 +156,8 @@ export function EverySurface() {
                       alt={card.alt}
                       width={1100}
                       height={688}
-                      loading="lazy"
+                      priority={idx < 3}
+                      loading={idx < 3 ? "eager" : "lazy"}
                       className="h-full w-full object-cover"
                     />
                   </div>

@@ -42,7 +42,7 @@ export function FaqSection() {
   ];
 
   return (
-    <section id="faq" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-smoke py-24 sm:py-32">
+    <section id="faq" className="text-ink relative isolate scroll-mt-24 overflow-clip bg-smoke py-24 sm:py-32">
       <div className="mx-auto w-full px-5 sm:px-8 max-w-[820px]">
         {/* Section Heading */}
         <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>

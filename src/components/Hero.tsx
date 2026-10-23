@@ -175,8 +175,8 @@ export function Hero() {
       </div>
 
       {/* Laptop Mockup with Floating Peek Widget */}
-      <div id="dock" className="relative z-10 mx-auto mt-10 w-full max-w-[980px] px-5 sm:mt-12 sm:px-8">
-        <div data-rise="load" style={{ "--rise-delay": "1s", "--rise-y": "34px", "--rise-dur": "1.1s" } as React.CSSProperties}>
+      <div id="dock" className="relative z-10 mx-auto mt-10 w-full max-w-[980px] scroll-mt-24 px-5 sm:mt-12 sm:px-8">
+        <div id="deck" className="scroll-mt-24">
           <div className="relative w-full">
             {/* Ambient Glows */}
             <div
@@ -207,7 +207,7 @@ export function Hero() {
                   muted
                   loop
                   playsInline
-                  preload="metadata"
+                  preload="auto"
                   poster="/media/screenshots/deck-peeked-3.png"
                   className="h-full w-full object-contain bg-black"
                 />

@@ -3,7 +3,7 @@ import { Check, LockOpen, Sparkles } from "lucide-react";
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-white py-24 sm:py-32">
+    <section id="pricing" className="text-ink relative isolate scroll-mt-24 overflow-clip bg-white py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         {/* Section Heading */}
         <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>

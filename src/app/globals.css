@@ -29,6 +29,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-sans);
   }
@@ -61,7 +62,7 @@
   font-family: var(--font-excalifont), "Segoe Print", cursive;
 }
 
-/* Animations from peekynotes */
+/* UI micro-animations */
 @keyframes pn-rise {
   0% {
     opacity: 0;
@@ -170,7 +171,7 @@
   --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Custom scrollbar matching Peeky Notes aesthetic */
+/* Custom minimalist scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -212,7 +213,7 @@
   animation-play-state: running;
 }
 
-/* Scroll reveal animations matching Peeky Notes */
+/* Scroll reveal animations */
 [data-reveal] {
   opacity: 0;
   transform: translate3d(0, var(--reveal-y, 32px), 0) scale(var(--reveal-scale, 0.98));

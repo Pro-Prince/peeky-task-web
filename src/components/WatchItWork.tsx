@@ -6,7 +6,7 @@ export function WatchItWork() {
   const words = ["Watch", "it", "work."];
 
   return (
-    <section className="text-ink relative isolate scroll-mt-16 overflow-clip bg-haze py-24 sm:py-32">
+    <section id="watch-it-work" className="text-ink relative isolate scroll-mt-20 overflow-clip bg-haze py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         <div className="mx-auto max-w-[62ch] text-center">
           <h2 className="type-headline text-ink text-[clamp(1.95rem,4.4vw,3.4rem)]">
@@ -47,14 +47,7 @@ export function WatchItWork() {
       </div>
 
       <div className="mt-14">
-        <div
-          data-rise="scroll"
-          style={{
-            "--rise-delay": "0s",
-            "--rise-y": "40px",
-            "--rise-dur": "1.1s",
-          } as React.CSSProperties}
-        >
+        <div>
           <div className="mx-auto w-full max-w-[1180px] overflow-hidden rounded-[18px] border border-black/8 bg-white px-5 shadow-[0_60px_120px_-60px_rgba(0,0,0,0.6)] sm:px-0">
             <div className="relative isolate overflow-hidden bg-black" style={{ aspectRatio: "16 / 9" }}>
               <video
@@ -63,7 +56,7 @@ export function WatchItWork() {
                 muted
                 loop
                 playsInline
-                preload="metadata"
+                preload="auto"
                 className="h-full w-full object-cover"
               />
             </div>

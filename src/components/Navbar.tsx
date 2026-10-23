@@ -8,13 +8,37 @@ import { Menu, X } from "lucide-react";
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (window.location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      history.pushState(null, "", "#top");
+      setMobileMenuOpen(false);
+    }
+  };
+
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    if (window.location.pathname === "/") {
+      e.preventDefault();
+      const el = document.getElementById(id);
+      if (el) {
+        const yOffset = -72;
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+        history.pushState(null, "", `#${id}`);
+      }
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-paper-bg/85 backdrop-blur-xl transition-[background-color,border-color] duration-500">
       <nav className="mx-auto flex h-14 w-full max-w-[1180px] items-center justify-between px-5 sm:px-8">
         {/* Brand */}
         <Link
           href="#top"
-          className="text-ink flex items-center gap-2.5 text-[15px] font-semibold tracking-[-0.02em]"
+          onClick={scrollToTop}
+          className="text-ink flex items-center gap-2.5 text-[15px] font-semibold tracking-[-0.02em] hover:opacity-85 transition-opacity"
         >
           <div className="relative size-[26px] overflow-hidden rounded-[22%] shadow-sm">
             <Image
@@ -34,6 +58,7 @@ export function Navbar() {
           <li>
             <Link
               href="/#dock"
+              onClick={(e) => scrollToSection(e, "dock")}
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               The dock
@@ -43,6 +68,7 @@ export function Navbar() {
           <li>
             <Link
               href="/#features"
+              onClick={(e) => scrollToSection(e, "features")}
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Features
@@ -52,6 +78,7 @@ export function Navbar() {
           <li>
             <Link
               href="/#shortcuts"
+              onClick={(e) => scrollToSection(e, "shortcuts")}
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Shortcuts
@@ -61,6 +88,7 @@ export function Navbar() {
           <li>
             <Link
               href="/#speed"
+              onClick={(e) => scrollToSection(e, "speed")}
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Speed
@@ -70,6 +98,7 @@ export function Navbar() {
           <li>
             <Link
               href="/#privacy"
+              onClick={(e) => scrollToSection(e, "privacy")}
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Privacy
@@ -79,6 +108,7 @@ export function Navbar() {
           <li>
             <Link
               href="/#pricing"
+              onClick={(e) => scrollToSection(e, "pricing")}
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               Pricing
@@ -88,6 +118,7 @@ export function Navbar() {
           <li>
             <Link
               href="/#faq"
+              onClick={(e) => scrollToSection(e, "faq")}
               className="group text-ink-muted hover:text-ink relative text-[13px] transition-colors"
             >
               FAQ
@@ -99,24 +130,25 @@ export function Navbar() {
         {/* Action Buttons */}
         <div className="flex items-center gap-2">
           <Link
-            href="#download"
-            className="text-ink-muted hover:text-ink hidden h-8 items-center rounded-full px-3 text-[13px] transition-colors hover:bg-black/5 sm:inline-flex"
-          >
-            Free trial
-          </Link>
-          <Link
             href="/buy"
-            className="bg-ink hover:bg-ink/88 shadow-sm hidden h-8 items-center rounded-full px-4 text-[13px] font-medium text-white transition-all sm:inline-flex"
+            className="text-ink hover:text-ink/75 hidden h-9 items-center px-4 text-[13px] font-medium transition-colors sm:inline-flex"
           >
             Buy once
           </Link>
+          <Link
+            href="/#download"
+            onClick={(e) => scrollToSection(e, "download")}
+            className="bg-ink hover:bg-ink/88 inline-flex h-9 items-center rounded-full px-4 text-[13px] font-medium tracking-[-0.01em] text-white shadow-[0_4px_14px_rgba(0,0,0,0.15)] transition-all active:scale-[0.98]"
+          >
+            Start free trial
+          </Link>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile menu trigger */}
           <button
             type="button"
-            aria-label="Toggle menu"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-ink grid size-9 place-items-center rounded-full hover:bg-black/5 md:hidden"
+            aria-label="Toggle navigation menu"
+            className="text-ink hover:bg-black/5 ml-1 grid size-9 place-items-center rounded-lg transition-colors md:hidden"
           >
             {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
@@ -130,7 +162,7 @@ export function Navbar() {
             <li>
               <Link
                 href="/#dock"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, "dock")}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
                 The dock
@@ -139,7 +171,7 @@ export function Navbar() {
             <li>
               <Link
                 href="/#features"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, "features")}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
                 Features
@@ -148,7 +180,7 @@ export function Navbar() {
             <li>
               <Link
                 href="/#shortcuts"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, "shortcuts")}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
                 Shortcuts
@@ -157,7 +189,7 @@ export function Navbar() {
             <li>
               <Link
                 href="/#speed"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, "speed")}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
                 Speed
@@ -166,7 +198,7 @@ export function Navbar() {
             <li>
               <Link
                 href="/#privacy"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, "privacy")}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
                 Privacy
@@ -175,7 +207,7 @@ export function Navbar() {
             <li>
               <Link
                 href="/#pricing"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, "pricing")}
                 className="text-ink-muted hover:text-ink block rounded-lg px-3 py-2 text-[14px]"
               >
                 Pricing
@@ -193,7 +225,7 @@ export function Navbar() {
             <li className="pt-2 border-t border-black/5">
               <Link
                 href="/#download"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, "download")}
                 className="bg-ink block w-full rounded-full py-2.5 text-center text-[13px] font-medium text-white"
               >
                 Start free trial

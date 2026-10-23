@@ -33,7 +33,7 @@ export function FeaturesBento() {
   ];
 
   return (
-    <section id="features" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-white py-24 sm:py-32">
+    <section id="features" className="text-ink relative isolate scroll-mt-24 overflow-clip bg-white py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         {/* Section Heading */}
         <div data-reveal className="mx-auto max-w-[62ch] text-center" style={{ "--reveal-y": "24px" } as React.CSSProperties}>
@@ -97,7 +97,7 @@ export function FeaturesBento() {
                 Check off or delete instantly. No pop-up dialogs. 10 seconds to undo if needed.
               </p>
             </div>
-            {/* Animated interactive card matching peekynotes */}
+            {/* Animated interactive task card */}
             <div className="flex h-full items-center justify-center p-6">
               <div
                 className="w-full max-w-[260px] overflow-hidden rounded-[14px] shadow-[0_18px_44px_-18px_rgba(0,0,0,0.45)]"

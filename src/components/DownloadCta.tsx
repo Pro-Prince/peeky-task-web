@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function DownloadCta() {
   return (
-    <section id="download" className="text-ink isolate scroll-mt-16 overflow-clip bg-paper-bg relative pt-28 pb-20 sm:pt-36">
+    <section id="download" className="text-ink isolate scroll-mt-24 overflow-clip bg-paper-bg relative pt-28 pb-20 sm:pt-36">
       {/* Floating Pill Accents Rising in Background */}
       <div
         aria-hidden="true"

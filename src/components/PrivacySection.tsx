@@ -2,7 +2,7 @@ import { Check, Monitor, WifiOff, X } from "lucide-react";
 
 export function PrivacySection() {
   return (
-    <section id="privacy" className="text-ink relative isolate scroll-mt-16 overflow-clip bg-paper-bg py-24 sm:py-32">
+    <section id="privacy" className="text-ink relative isolate scroll-mt-24 overflow-clip bg-paper-bg py-24 sm:py-32">
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8 grid items-center gap-14 lg:grid-cols-2">
         {/* Left Column: Privacy Explanation */}
         <div data-reveal style={{ "--reveal-delay": "0.1s" } as React.CSSProperties}>

@@ -1,10 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { MarqueeTicker } from "@/components/MarqueeTicker";
-import { WatchItWork } from "@/components/WatchItWork";
 import { FeaturesBento } from "@/components/FeaturesBento";
 import { EverySurface } from "@/components/EverySurface";
 import { ShortcutsSection } from "@/components/ShortcutsSection";
+import { WatchItWork } from "@/components/WatchItWork";
 import { SpeedMetrics } from "@/components/SpeedMetrics";
 import { PrivacySection } from "@/components/PrivacySection";
 import { PricingSection } from "@/components/PricingSection";
@@ -19,10 +19,10 @@ export default function Home() {
       <main className="flex flex-col">
         <Hero />
         <MarqueeTicker />
-        <WatchItWork />
         <FeaturesBento />
         <EverySurface />
         <ShortcutsSection />
+        <WatchItWork />
         <SpeedMetrics />
         <PrivacySection />
         <PricingSection />
