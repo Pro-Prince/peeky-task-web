@@ -4,12 +4,12 @@
 ### Official promotional website & landing page for Peeky Task.
 
 ![Status](https://img.shields.io/badge/status-live-22C55E?style=flat-square)
-![Site](https://img.shields.io/badge/site-peekytask.in-6366F1?style=flat-square)
+![Site](https://img.shields.io/badge/site-peeky--task.vercel.app-6366F1?style=flat-square)
 ![Framework](https://img.shields.io/badge/framework-Next.js%2016-22D3EE?style=flat-square)
 ![Stack](https://img.shields.io/badge/stack-React%20%2B%20Tailwind-525252?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-F59E0B?style=flat-square)
 
-**[→ View Live](https://peekytask.in)**
+**[→ View Live](https://peeky-task.vercel.app/)**
 
 </div>
 
@@ -23,7 +23,7 @@ Peeky Task Web is the official promotional website and interactive web showcase 
 
 ## Live Demo
 
-🔗 **[peekytask.in](https://peekytask.in)**
+🔗 **[peeky-task.vercel.app](https://peeky-task.vercel.app/)**
 
 > High-performance static web application optimized for desktop, tablet, and mobile with instant media preloading and fluid micro-animations.
 

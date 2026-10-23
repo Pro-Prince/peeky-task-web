@@ -17,7 +17,7 @@ const excalifont = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://peekytask.in"),
+  metadataBase: new URL("https://peeky-task.vercel.app"),
   title: "Peeky Task - Minimalist Floating Task Widget for Windows 10 and 11",
   description: "A fast, distraction-free daily task app for Windows that lives right on the edge of your screen. 100% offline, zero telemetry, and never clutters your workflow.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Peeky Task - Floating daily task widget for Windows",
     description: "Capture your top priorities and keep them in view. Lives quietly on the edge of your screen.",
-    url: "https://peekytask.in",
+    url: "https://peeky-task.vercel.app",
     siteName: "Peeky Task",
     images: [{ url: "/media/og-image.png" }],
     type: "website",
