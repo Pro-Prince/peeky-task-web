@@ -202,13 +202,13 @@ export function Hero() {
             >
               <div className="relative isolate overflow-hidden h-full w-full" style={{ aspectRatio: "16 / 10" }}>
                 <video
-                  src="/media/video/hero-deck.mp4"
+                  src="/media/video/peeky-task-video.mp4"
                   autoPlay
                   muted
                   loop
                   playsInline
                   preload="metadata"
-                  poster="/media/screenshots/hero-poster-2.png"
+                  poster="/media/screenshots/app-view.png"
                   className="h-full w-full object-cover"
                 />
               </div>

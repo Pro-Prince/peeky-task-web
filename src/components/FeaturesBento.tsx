@@ -58,7 +58,7 @@ export function FeaturesBento() {
             <div className="mt-6 overflow-hidden rounded-xl border border-black/8 bg-white shadow-[0_20px_60px_-30px_rgba(0,0,0,0.35)]">
               <div className="relative isolate overflow-hidden" style={{ aspectRatio: "16 / 10" }}>
                 <Image
-                  src="/media/screenshots/manager-all-notes-2.png"
+                  src="/media/screenshots/app-view.png"
                   alt="All Tasks Manager Window"
                   fill
                   className="object-cover"
@@ -76,12 +76,12 @@ export function FeaturesBento() {
               Floats silently on your wallpaper or over other windows. Expands when you peek.
             </p>
             <div className="mt-6 overflow-hidden rounded-xl border border-black/8 shadow-[0_20px_60px_-30px_rgba(0,0,0,0.35)]">
-              <div className="relative isolate overflow-hidden" style={{ aspectRatio: "4 / 5" }}>
+              <div className="relative isolate overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
                 <Image
-                  src="/media/screenshots/note-window-4.png"
+                  src="/media/screenshots/deck-view.png"
                   alt="Floating Task Pill Window"
                   fill
-                  className="object-cover"
+                  className="object-contain bg-[#1e1e24]"
                 />
               </div>
             </div>

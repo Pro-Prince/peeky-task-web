@@ -77,21 +77,21 @@ export function SpeedMetrics() {
 
         {/* 3 Detail Cards */}
         <div className="mt-12 grid gap-4 lg:grid-cols-3">
-          <div className="border-hairline bg-paper-bg h-full rounded-2xl border p-6">
+          <div data-reveal className="border-hairline bg-paper-bg h-full rounded-2xl border p-6" style={{ "--reveal-delay": "0.1s" } as React.CSSProperties}>
             <h3 className="text-ink text-[14.5px] font-semibold">No busy polling</h3>
             <p className="text-ink-muted mt-2 text-[13.5px] leading-relaxed">
               Peeky Task doesn’t constantly wake up to check what’s happening. It listens natively for system events and stays dormant otherwise.
             </p>
           </div>
 
-          <div className="border-hairline bg-paper-bg h-full rounded-2xl border p-6">
+          <div data-reveal className="border-hairline bg-paper-bg h-full rounded-2xl border p-6" style={{ "--reveal-delay": "0.2s" } as React.CSSProperties}>
             <h3 className="text-ink text-[14.5px] font-semibold">Windows are released, not hidden</h3>
             <p className="text-ink-muted mt-2 text-[13.5px] leading-relaxed">
               When you collapse a window, Peeky Task frees graphical memory. Nothing stays secretly rendering in the background.
             </p>
           </div>
 
-          <div className="border-hairline bg-paper-bg h-full rounded-2xl border p-6">
+          <div data-reveal className="border-hairline bg-paper-bg h-full rounded-2xl border p-6" style={{ "--reveal-delay": "0.3s" } as React.CSSProperties}>
             <h3 className="text-ink text-[14.5px] font-semibold">Hardware-accelerated rendering</h3>
             <p className="text-ink-muted mt-2 text-[13.5px] leading-relaxed">
               Glassmorphism and edge peeks are powered by the native Windows DirectComposition engine for butter-smooth 120Hz animations.
