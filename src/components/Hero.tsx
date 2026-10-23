@@ -1,10 +1,51 @@
 "use client";
 
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown } from "lucide-react";
 
 export function Hero() {
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const vid = heroVideoRef.current;
+    if (!vid) return;
+
+    vid.muted = true;
+    vid.defaultMuted = true;
+    vid.playsInline = true;
+    vid.loop = true;
+
+    const tryPlay = () => {
+      vid.muted = true;
+      const playPromise = vid.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // If browser restricted unmuted autoplay, mute and resume on first interaction
+          const resume = () => {
+            vid.muted = true;
+            vid.play().catch(() => {});
+            window.removeEventListener("pointerdown", resume);
+            window.removeEventListener("scroll", resume);
+            window.removeEventListener("keydown", resume);
+          };
+          window.addEventListener("pointerdown", resume, { once: true, passive: true });
+          window.addEventListener("scroll", resume, { once: true, passive: true });
+          window.addEventListener("keydown", resume, { once: true, passive: true });
+        });
+      }
+    };
+
+    tryPlay();
+    vid.addEventListener("canplay", tryPlay);
+    vid.addEventListener("loadeddata", tryPlay);
+
+    return () => {
+      vid.removeEventListener("canplay", tryPlay);
+      vid.removeEventListener("loadeddata", tryPlay);
+    };
+  }, []);
   return (
     <section id="top" className="bg-paper-bg relative isolate overflow-clip pt-26 pb-16 sm:pt-28 sm:pb-24">
       {/* Background Gradients & Delicate Grid */}
@@ -200,16 +241,21 @@ export function Hero() {
                 height: "71.20%",
               }}
             >
-              <div className="relative isolate overflow-hidden h-full w-full flex items-center justify-center bg-black" style={{ aspectRatio: "16 / 10" }}>
+              <div className="relative isolate overflow-hidden h-full w-full" style={{ aspectRatio: "16 / 10" }}>
                 <video
+                  ref={heroVideoRef}
                   src="/media/video/peeky-task-video.mp4"
                   autoPlay
                   muted
                   loop
                   playsInline
                   preload="auto"
-                  poster="/media/screenshots/deck-peeked-3.png"
-                  className="h-full w-full object-contain bg-black"
+                  poster="/media/screenshots/hero-video-first-frame.png"
+                  className="h-full w-full object-cover"
+                  onEnded={(e) => {
+                    e.currentTarget.currentTime = 0;
+                    e.currentTarget.play().catch(() => {});
+                  }}
                 />
               </div>
             </div>

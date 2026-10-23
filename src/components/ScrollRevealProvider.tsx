@@ -28,13 +28,21 @@ export function ScrollRevealProvider({ children }: { children: React.ReactNode }
       },
       {
         root: null,
-        rootMargin: "0px 0px -5% 0px",
-        threshold: 0.05,
+        rootMargin: "150px 0px 100px 0px",
+        threshold: 0.01,
       }
     );
 
     const elements = document.querySelectorAll("[data-reveal], [data-rise='scroll'], [data-anim='scroll']");
-    elements.forEach((el) => observer.observe(el));
+    elements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight + 200) {
+        el.classList.add("revealed");
+        el.setAttribute("data-shown", "true");
+      } else {
+        observer.observe(el);
+      }
+    });
 
     return () => {
       elements.forEach((el) => observer.unobserve(el));

@@ -156,8 +156,8 @@ export function EverySurface() {
                       alt={card.alt}
                       width={1100}
                       height={688}
-                      priority={idx < 3}
-                      loading={idx < 3 ? "eager" : "lazy"}
+                      priority
+                      loading="eager"
                       className="h-full w-full object-cover"
                     />
                   </div>

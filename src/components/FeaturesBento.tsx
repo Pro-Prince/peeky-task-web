@@ -61,6 +61,8 @@ export function FeaturesBento() {
                   src="/media/screenshots/app-view.png"
                   alt="All Tasks Manager Window"
                   fill
+                  priority
+                  loading="eager"
                   className="object-cover"
                 />
               </div>
@@ -81,6 +83,8 @@ export function FeaturesBento() {
                   src="/media/screenshots/deck-view.png"
                   alt="Floating Task Pill Window"
                   fill
+                  priority
+                  loading="eager"
                   className="object-contain bg-[#1e1e24]"
                 />
               </div>

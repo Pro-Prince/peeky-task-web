@@ -54,6 +54,21 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${excalifont.variable} h-full antialiased`}
     >
+      <head>
+        {/* Preload critical video & laptop mockup for instant playback and pre-rendered appearance */}
+        <link rel="preload" href="/media/windows-laptop-front-view-mockup.png" as="image" />
+        <link rel="preload" href="/media/screenshots/hero-video-first-frame.png" as="image" />
+        <link rel="preload" href="/media/video/peeky-task-video.mp4" as="video" type="video/mp4" />
+        {/* Preload key showcase screenshots */}
+        <link rel="preload" href="/media/screenshots/app-view.png" as="image" />
+        <link rel="preload" href="/media/screenshots/deck-view.png" as="image" />
+        <link rel="preload" href="/media/screenshots/click-to-edit.png" as="image" />
+        <link rel="preload" href="/media/screenshots/deck-peeked-3.png" as="image" />
+        <link rel="preload" href="/media/screenshots/note-expanded-4.png" as="image" />
+        <link rel="preload" href="/media/screenshots/manager-dark-2.png" as="image" />
+        <link rel="preload" href="/media/screenshots/settings-2.png" as="image" />
+        <link rel="preload" href="/media/screenshots/licence-2.png" as="image" />
+      </head>
       <body className="bg-paper-bg text-ink flex min-h-full flex-col overflow-x-hidden font-sans">
         <ScrollRevealProvider>
           {children}
