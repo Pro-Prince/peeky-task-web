@@ -241,7 +241,7 @@ export function Hero() {
                 height: "71.20%",
               }}
             >
-              <div className="relative isolate overflow-hidden h-full w-full" style={{ aspectRatio: "16 / 10" }}>
+              <div className="relative isolate overflow-hidden h-full w-full flex items-center justify-center bg-black">
                 <video
                   ref={heroVideoRef}
                   src="/media/video/peeky-task-video.mp4"
@@ -251,7 +251,7 @@ export function Hero() {
                   playsInline
                   preload="auto"
                   poster="/media/screenshots/hero-video-first-frame.png"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                   onEnded={(e) => {
                     e.currentTarget.currentTime = 0;
                     e.currentTarget.play().catch(() => {});
