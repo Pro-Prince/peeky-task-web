@@ -9,8 +9,9 @@ export function ScrollRevealProvider({ children }: { children: React.ReactNode }
     // Respect user's motion preferences
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReducedMotion) {
-      document.querySelectorAll("[data-reveal]").forEach((el) => {
+      document.querySelectorAll("[data-reveal], [data-rise='scroll'], [data-anim='scroll']").forEach((el) => {
         el.classList.add("revealed");
+        el.setAttribute("data-shown", "true");
       });
       return;
     }
@@ -20,19 +21,19 @@ export function ScrollRevealProvider({ children }: { children: React.ReactNode }
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("revealed");
-            // Optional: unobserve once revealed for performance
+            entry.target.setAttribute("data-shown", "true");
             observer.unobserve(entry.target);
           }
         });
       },
       {
         root: null,
-        rootMargin: "0px 0px -8% 0px", // Trigger when 8% inside viewport
-        threshold: 0.1,
+        rootMargin: "0px 0px -5% 0px",
+        threshold: 0.05,
       }
     );
 
-    const elements = document.querySelectorAll("[data-reveal]");
+    const elements = document.querySelectorAll("[data-reveal], [data-rise='scroll'], [data-anim='scroll']");
     elements.forEach((el) => observer.observe(el));
 
     return () => {

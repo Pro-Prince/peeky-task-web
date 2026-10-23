@@ -200,7 +200,7 @@ export function Hero() {
                 height: "71.20%",
               }}
             >
-              <div className="relative isolate overflow-hidden h-full w-full" style={{ aspectRatio: "16 / 10" }}>
+              <div className="relative isolate overflow-hidden h-full w-full flex items-center justify-center bg-black" style={{ aspectRatio: "16 / 10" }}>
                 <video
                   src="/media/video/peeky-task-video.mp4"
                   autoPlay
@@ -208,8 +208,8 @@ export function Hero() {
                   loop
                   playsInline
                   preload="metadata"
-                  poster="/media/screenshots/app-view.png"
-                  className="h-full w-full object-cover"
+                  poster="/media/screenshots/deck-peeked-3.png"
+                  className="h-full w-full object-contain bg-black"
                 />
               </div>
             </div>

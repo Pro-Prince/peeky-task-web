@@ -17,6 +17,7 @@ const excalifont = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://peekytask.in"),
   title: "Peeky Task - Minimalist Floating Task Widget for Windows 10 and 11",
   description: "A fast, distraction-free daily task app for Windows that lives right on the edge of your screen. 100% offline, zero telemetry, and never clutters your workflow.",
   keywords: [

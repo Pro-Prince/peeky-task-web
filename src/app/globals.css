@@ -166,8 +166,50 @@
   18%, to { transform: translate(420%) skew(-18deg); }
 }
 
-[data-rise="load"] {
-  animation: pn-rise var(--rise-dur, 0.9s) cubic-bezier(0.16, 1, 0.3, 1) var(--rise-delay, 0s) both;
+:root {
+  --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom scrollbar matching Peeky Notes aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbfbfd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9dfe8;
+  border-radius: 9999px;
+  border: 2px solid #fbfbfd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b0b8c4;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d9dfe8 #fbfbfd;
+}
+
+/* Rise animations */
+[data-rise] {
+  animation: pn-rise var(--rise-dur, 0.85s) var(--ease-apple, cubic-bezier(0.16, 1, 0.3, 1)) var(--rise-delay, 0s) both;
+}
+
+[data-rise="scroll"],
+[data-anim="scroll"] {
+  animation-play-state: paused;
+}
+
+[data-rise="scroll"][data-shown],
+[data-anim="scroll"][data-shown],
+[data-rise="scroll"].revealed,
+[data-anim="scroll"].revealed {
+  animation-play-state: running;
 }
 
 /* Scroll reveal animations matching Peeky Notes */
