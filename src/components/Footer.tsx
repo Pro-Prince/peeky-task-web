@@ -88,6 +88,16 @@ export function Footer() {
                     Buy a licence
                   </Link>
                 </li>
+                <li>
+                  <a
+                    href="https://apps.microsoft.com/detail/9P93CZD9129H"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-ink-muted hover:text-ink text-[13px] transition-colors"
+                  >
+                    Microsoft Store
+                  </a>
+                </li>
               </ul>
             </div>
 

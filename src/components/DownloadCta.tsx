@@ -85,7 +85,7 @@ export function DownloadCta() {
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="https://apps.microsoft.com"
+            href="https://apps.microsoft.com/detail/9P93CZD9129H"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-ink hover:bg-ink/88 inline-flex h-12 items-center rounded-full px-8 text-[15px] font-medium tracking-[-0.01em] text-white shadow-[0_12px_34px_-12px_rgba(0,0,0,0.6)] transition-all active:scale-[0.98]"
