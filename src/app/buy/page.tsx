@@ -60,14 +60,14 @@ export default function BuyPage() {
                     href={CHECKOUT_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-ink hover:bg-ink/88 inline-flex h-12 flex-1 items-center justify-center rounded-full px-7 text-[15px] font-medium text-white shadow-md transition-all active:scale-[0.98]"
+                    className="bg-ink hover:bg-ink/88 inline-flex h-12 w-full sm:w-auto sm:flex-1 items-center justify-center rounded-full px-6 text-[15px] font-medium text-white shadow-md transition-all active:scale-[0.98]"
                   >
                     Buy Peeky Task
-                    <ArrowRight className="ml-2 size-4" />
+                    <ArrowRight className="ml-2 size-4 shrink-0" />
                   </a>
                   <Link
                     href="/#download"
-                    className="text-ink inline-flex h-12 items-center justify-center rounded-full border border-black/15 bg-white px-6 text-[14.5px] font-medium transition-all hover:border-black/30 hover:bg-black/5"
+                    className="text-ink inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-full border border-black/15 bg-white px-6 text-[14.5px] font-medium transition-all hover:border-black/30 hover:bg-black/5"
                   >
                     Try free for 7 days
                   </Link>

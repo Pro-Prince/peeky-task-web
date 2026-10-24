@@ -32,7 +32,7 @@ export function Footer() {
           {/* Brand Info with scroll-to-top */}
           <div className="max-w-[34ch]">
             <Link
-              href="#top"
+              href="/"
               onClick={scrollToTop}
               className="text-ink group inline-flex items-center gap-2.5 text-[15px] font-semibold tracking-[-0.015em] transition-opacity hover:opacity-85"
             >

@@ -36,7 +36,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-14 w-full max-w-[1180px] items-center justify-between px-5 sm:px-8">
         {/* Brand */}
         <Link
-          href="#top"
+          href="/"
           onClick={scrollToTop}
           className="text-ink flex items-center gap-2.5 text-[15px] font-semibold tracking-[-0.02em] hover:opacity-85 transition-opacity"
         >
