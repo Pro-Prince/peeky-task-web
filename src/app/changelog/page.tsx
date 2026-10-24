@@ -28,6 +28,26 @@ export default function ChangelogPage() {
         </div>
 
         <div className="space-y-12">
+          {/* Release 1.1.0 */}
+          <div className="border-l-2 border-note-ink pl-6 space-y-4">
+            <div className="flex items-center gap-3">
+              <span className="bg-note-mint text-note-ink font-semibold text-[12px] px-2.5 py-0.5 rounded-full">
+                v1.1.0
+              </span>
+              <span className="text-ink-muted text-[13px]">Latest Update · October 2026</span>
+            </div>
+            <h2 className="text-[20px] font-semibold text-ink">
+              Smooth Motion, Deck Fixes & Complete Trial Protection
+            </h2>
+            <ul className="list-disc pl-5 space-y-2 text-ink-muted text-[14.5px]">
+              <li><strong>Fixed Add Task (+) Button:</strong> Resolved issue preventing new task lists from being created and opened directly from the edge deck.</li>
+              <li><strong>Silky-Smooth Motion:</strong> Re-engineered edge deck hover movement, tab previews, and click interactions to eliminate flickering and window redraw flashing.</li>
+              <li><strong>Clean Modern Window Chrome:</strong> Removed native application menu bars (<kbd className="bg-smoke px-1.5 py-0.5 rounded border border-black/10 font-mono text-[12px]">File</kbd>, <kbd className="bg-smoke px-1.5 py-0.5 rounded border border-black/10 font-mono text-[12px]">Edit</kbd>, <kbd className="bg-smoke px-1.5 py-0.5 rounded border border-black/10 font-mono text-[12px]">View</kbd>, etc.) for an uncluttered desktop experience.</li>
+              <li><strong>Active 7-Day Free Trial Engine:</strong> Live trial countdown with automatic locked editing after expiry while keeping all tasks 100% readable, searchable, and exportable.</li>
+              <li><strong>Fullscreen & Startup Integration:</strong> Working &quot;Hide over fullscreen apps&quot; (keeps deck out of games and presentations) and &quot;Launch on Windows Startup&quot;.</li>
+            </ul>
+          </div>
+
           {/* Release 1.0.0 */}
           <div className="border-l-2 border-black/10 pl-6 space-y-4">
             <div className="flex items-center gap-3">
