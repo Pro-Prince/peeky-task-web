@@ -18,8 +18,9 @@ const excalifont = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://peeky-task.vercel.app"),
-  title: "Peeky Task - Minimalist Floating Task Widget for Windows 10 and 11",
-  description: "A fast, distraction-free daily task app for Windows that lives right on the edge of your screen. 100% offline, zero telemetry, and never clutters your workflow.",
+  title: "Peeky Task - Minimalist Floating Task Widget for Windows 10 & 11",
+  description:
+    "A minimalist, screen-edge floating daily task and to-do widget for Windows 10 and 11. 100% offline, zero telemetry, and always within reach.",
   keywords: [
     "peeky task",
     "todo app for windows",
@@ -28,19 +29,36 @@ export const metadata: Metadata = {
     "desktop todo list",
     "offline task manager",
     "minimalist to do list",
-    "always on top tasks"
+    "screen edge tasks",
+    "always on top tasks",
+    "windows to-do widget"
   ],
   icons: {
     icon: "/app-icon.png",
     apple: "/app-icon.png",
   },
   openGraph: {
-    title: "Peeky Task - Floating daily task widget for Windows",
-    description: "Capture your top priorities and keep them in view. Lives quietly on the edge of your screen.",
+    title: "Peeky Task - Daily to-dos for Windows that live on the edge",
+    description:
+      "A minimalist floating daily task and to-do widget for Windows 10 & 11. Screen-edge docking, markdown checklists, and 100% offline privacy.",
     url: "https://peeky-task.vercel.app",
     siteName: "Peeky Task",
-    images: [{ url: "/media/og-image.png" }],
+    images: [
+      {
+        url: "/media/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Peeky Task - Floating daily task widget for Windows 10 & 11",
+      },
+    ],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Peeky Task - Daily to-dos for Windows that live on the edge",
+    description:
+      "A minimalist floating daily task and to-do widget for Windows 10 & 11. Screen-edge docking, markdown checklists, and 100% offline privacy.",
+    images: ["/media/og-image.png"],
   },
 };
 
